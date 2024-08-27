@@ -1,0 +1,202 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    
+}
+
+body{
+    background: url(../background_img/background.jpg) no-repeat;
+    font-family: myFont;
+
+}
+
+.center{
+    position: absolute;
+    top: 120%;
+    left: 50%;
+    transform: translate(-50%, -40% );
+}
+
+@font-face {
+    font-family: myFont;
+    src: url(Fonts/NunitoSans.ttf);
+}
+
+/* Navigation Bar  */
+
+.navbar{
+    background-color: black;
+    height: 100px;
+    position: sticky;
+    position: relative;
+    display: flex;
+    align-items: center;
+    opacity: 0.75;
+    /* justify-content: center;
+     */
+}
+
+.navbar ul{
+    display: flex;
+}
+
+.navbar ul li{
+    align-items: center;
+    text-align: center;
+    padding: 7px 4px 0px 3px;
+    margin: 14px 60px 10px 29px;
+    text-decoration: none;
+    list-style: none;
+
+}
+
+/* Buttons  */
+
+.btn{
+    padding: 0px 0px 0px 0px;
+    margin: 0px 0px 0px 0px;
+    height: 55px;
+    width: 105px;
+    align-items: center;
+    border-radius: 30px;
+    background-color: whitesmoke;
+    border: 2px solid rgb(177, 162, 162);
+    font-family: myFont;
+    font-size: 17px;
+    font-weight: bolder;
+    transition-property: background-color color;
+    transition-duration: 1s;
+}
+
+.btn:hover{
+    background-color: rgb(114, 114, 158);
+    color: white;
+    border: 2px solid rgb(131, 122, 122);
+    cursor: pointer;
+}
+
+#submit{
+    margin: 16px 0px 0px 560px;
+    padding: 0px 0px 0px 0px;
+    width: 160px;
+    height: 65px;
+    font-size: 19px;
+}
+
+#signup{
+    padding: -1px 0px 0px 54px;
+    margin: 10px 0px 0px 15px;
+    
+}
+#login{
+    padding: -1px 70px 0px 40px;
+    margin: 10px 22px 5px 50px;
+    
+}
+
+/* Logo  */
+
+.logo{
+    margin: 16px 25px 15px -65px;
+    padding: 0px 10px 0px 65px;
+    border-radius: 20px;
+}
+
+
+.logo{
+    text-align: center;
+    color: rgb(253, 249, 249);
+    font-size: 40px;
+    font-style: italic;
+    font-weight: bolder;
+    transition-property: background-color color;
+    transition-duration: 1s;
+}
+
+.logo:hover{
+    background-color: white;
+    color: black;
+    cursor: pointer;
+
+
+}
+
+/* Navigation Bar Items  */
+
+.items{
+    text-align: center;
+    color: rgb(252, 251, 251);
+    font-weight: 100;
+    font-size: 21px;
+    font-weight: bolder;
+    border: 2px;
+    border-radius: 15px;
+    border-width: 20px;
+    transition-property: background-color color;
+    transition-duration: 1s;
+}
+
+.items:hover{
+    color: black;
+    background-color: white;
+    cursor: pointer;
+}
+
+/* Statement  */
+
+.statement{
+    text-align: center;
+    display: flex;
+    margin: 60px 0px 0px 0px;
+    font-size: 100px;
+    padding: 0px 0px 0px 0px;
+    font-family: statement;
+}
+
+@font-face {
+    font-family: statement;
+    src: url(Fonts/);
+}
+
+span{
+    color: rgb(150, 150, 48);
+}
+
+/* Form  */
+
+h1{
+    font-size: 140px;
+    font-family: statement;
+    margin: 20px 0px 8px 445px;
+    padding: 0px 0px 0px 0px;
+}
+
+.forms{
+    margin: 0px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;
+    opacity: 0.95;
+    height: 100%;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    box-shadow: top 2px black;
+}
+
+.form{
+    margin: -20px 0px 0px 400px;
+    padding: 52px 0px 0px 0px;
+}
+
+.input{
+    align-items: center;
+    text-align: center;
+    font-family: myFont;
+    font-size: 20px;
+    background-color: whitesmoke;
+    border-radius: 20px;
+    border: 2px solid rgb(243, 206, 206);
+    height: 52px;
+    width: 500px;
+}
+
+/* End CSS  */

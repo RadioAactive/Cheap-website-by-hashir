@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>Signup Page</title>
+    <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='signup.css') }}">
+    <link rel="stylesheet" href="../static/signup.css">
+    </head>
+    <body>
+        <div class="center">
+            <div class = "txt">
+            <br><h1>Ready to roll?</h1>
+            <form method="POST" autocomplete="off">
+
+                <div class="txt_field">
+                    <input type="text" name="f_name" required>
+                    <span> </span>
+                    <label> First Name </label>
+                </div>
+            
+                <div class="txt_field">
+                <input type="email" name="email" required>
+                <span> </span>
+                <label>Email Address </label>
+                </div>
+                
+                <div class="txt_field">
+                <input type="password" name="password" required>
+                <span> </span>
+                <label> Password </label>
+                </div>
+                
+                <div class="txt_field">
+                    <input type="password" name="c_pass" required>
+                    <span> </span>
+                    <label>Confirm Password </label>
+                </div>
+
+                <div class="error">
+                    <h6>{{error}}</h6>
+                </div>
+
+                <div class="user_login">
+                    <br>Already have an account? <a href="http://127.0.0.1:5000/login">login</a>
+                </div>
+                <input type="submit" value="Signup">
+            </div>
+            </form>
+        </div>
+    </body>
+</html>

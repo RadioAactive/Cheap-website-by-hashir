@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MNB</title>
+    <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='home.css') }}">
+</head>
+
+<body>
+    <div class="total">
+
+        <nav class="navbar">
+            <div class="logo">MNB</div>
+            <ul id="ul">
+                <li class="items">Home</li>
+                <li class="items">About us</li>
+                <li class="items">Contact us</li>
+                <li class="items">Facilities</li>
+                <button class="btn" onclick="window.location.href='{{ url_for('login') }}'"> Login </button>
+                <button class="btn"  onclick="window.location.href='{{ url_for('signup') }}'">Signup!</button>
+            </ul>
+        </nav>
+        <div class="center">
+            <div class="statement">
+                <p>Join the <span>cheapest</span> gym of <span>Islamabad</span> now at just <span>1500rs/month!</span></p>
+            </div>
+
+            <div class="wstatemant"><h1>Join Now!</h1></div>
+
+            <div class="forms">
+                <form action="noaction.php" id="forms">
+                    <div class="form">
+                        <input type="text" placeholder="Enter your name" class="input">
+                    </div>
+
+                    <div class="form">
+                        <input type="number" placeholder="Enter your age" class="input">
+                    </div>
+
+                    <div class="form">
+                        <input type="text" placeholder="Enter your phone number" class="input">
+                    </div>
+
+                    <div class="form">
+                        <input type="text" placeholder="Enter your address" class="input">
+                    </div>
+
+                    <div class="form">
+                        <input type="text" placeholder="Enter your email" class="input">
+                    </div>
+
+                    <div class="form">
+                        <input type="text" placeholder="Enter your duration" class="input">
+                    </div>
+                    <button class="btn" id="submit">Submit Now!</button>
+                </form>
+        </div>
+    </div>
+</body>
+</html>
